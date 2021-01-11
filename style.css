@@ -1,0 +1,144 @@
+@font-face{
+    font-family: poppins;
+    src: url("styles/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: poppins;
+    src: url("styles/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face{
+    font-family: opensans;
+    src: url("styles/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+}
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 3% 3% 0 3%;
+}
+
+
+img{
+    width: auto;
+    display: block;
+}
+.logo{
+    width: 10rem;
+    margin-bottom: 4rem;
+}
+
+.mockup{
+
+    width: 100%;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    padding-top: 5rem;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-family: poppins;
+    font-size: 2rem;
+}
+
+p{
+    margin-top: 2rem;
+    font-family: opensans;
+    font-weight: 400;
+    color: hsl(260, 3%, 78%);
+}
+.button{
+    font-family: poppins;
+    color: hsl(257, 40%, 49%);
+    margin-top: 1.5rem;
+    display: inline-block;
+    width: 38%;
+    height: 3.5rem;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    line-height: 3.5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 8px 2px hsl(258, 61%, 38%);
+}
+
+.button:hover{
+    transition: all 200ms;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+.social{
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.social a{
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 5px;
+}
+
+.social a:hover{
+    transition: all 200ms;
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+.credit{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+    .flexBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2rem 0 0 4rem;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 3rem;
+    }
+    .content{
+        width: 39%;
+        padding-top: 9rem;
+        color: white;
+        text-align: start;
+    }
+    .social{
+        text-align: end;
+        margin-top: 0;
+        margin-right: 5rem;
+    }
+    
+}
