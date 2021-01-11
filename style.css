@@ -121,7 +121,7 @@ p{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 2rem 0 0 4rem;
+        margin: 2rem 0 0 0;
     }
     .images{
         display: flex;
@@ -130,7 +130,7 @@ p{
         margin-right: 3rem;
     }
     .content{
-        width: 39%;
+        width: 35%;
         padding-top: 9rem;
         color: white;
         text-align: start;
